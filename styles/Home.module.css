@@ -1,0 +1,61 @@
+.Image{
+    width: 30%;
+    height: 50vh;
+    margin: auto;
+    position: relative;
+}
+#MainLinksMenu{
+    display: grid;
+    width: 50vw;
+    margin: auto;
+    background-image: url('../public/Images/AppyyoLogo.jpg');
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: contain; /* Resize the background image to cover the entire container */    
+    grid-template-columns: max-content auto max-content;
+    grid-template-rows: minmax(6rem, 8rem) minmax(6rem, 8rem) minmax(6rem, 14rem);
+    grid-template-areas: 
+        'ProfServ ProfServ  ProfServ'
+        'InnovLab Logo      AboutUs'
+        'NewProj  Logo      DigTrans'
+    ;
+}
+#NewestProject{
+    grid-area: NewProj;
+    align-self: baseline;
+}
+#InnovationLab{
+    grid-area: InnovLab;
+    text-align: right;
+    align-self: baseline;
+}
+#ProfessionalServices{
+    grid-area: ProfServ;
+    align-self: baseline;
+}
+#AboutUs{
+    grid-area: AboutUs;
+    text-align: left;
+    align-self: baseline;
+}
+#DigitalTransformation{
+    grid-area: DigTrans;
+    align-self: baseline;
+}
+.MainLink{
+    align-self: center;
+    text-align: center;
+    background-color: transparent;
+    line-height: 3.5rem;
+}
+.MainLink > span{
+    color: rgb(var(--fontcolor));
+    transition: var(--fastrans);
+    width: max-content;
+    border-radius: 35px;
+    padding: 7px;
+}
+.MainLink > span:hover{
+    text-shadow: 0px 2px 2px gray;
+    background-color: rgba(10,10,10,0.3);
+}

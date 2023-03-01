@@ -1,0 +1,23 @@
+{
+    "General": {
+        "developed": "Developed by",
+        "copyright": "Copyright",
+        "made": "made",
+        "version": "version"
+    },
+    "Index": {
+        "title": "Appy.yo® - Home",
+        "description": "",
+        "keywords": "",
+        "Welcome": "Hello World"
+    },
+    "Header": {
+        "menu1": "Home",
+        "menu2": "About Us",
+        "menu3": "Innovation",
+        "menu4": "Projects",
+        "menu5": "Services",
+        "menu6": "Digital",
+        "signin": "Get in Touch"
+    }
+}

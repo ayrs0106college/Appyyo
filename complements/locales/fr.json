@@ -1,0 +1,24 @@
+{
+    "General": {
+        "developed": "Développé par",
+        "copyright": "droits d'auteur",
+        "made": "fait",
+        "version": "version"
+    },
+    "Index": {
+        "title": "Appy.yo® - Accueil",
+        "description": "",
+        "keywords": "",
+        "Welcome": "Bonjour le Mondé"
+    },
+    "Header": {
+        "menu1": "D'accueil",
+        "menu2": "À propos de nous",
+        "menu3": "Innovation",
+        "menu4": "Projets",
+        "menu5": "Services",
+        "menu6": "Digitale",
+        "signin": "Entrer en contact"
+    }
+
+}

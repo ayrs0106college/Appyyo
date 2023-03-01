@@ -1,0 +1,33 @@
+.NewProj{
+    display: block;
+    margin: auto;
+    text-align: center;
+}
+.imagecontainer{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+}
+.Image {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 50vh;
+    margin: 1rem auto;
+    text-align: center;
+}
+.Img{
+	filter: drop-shadow(1px 1px 3px gray);
+	border-radius: 25px;
+    width: 100%;
+}
+.Proj{
+    width: 30vw;
+    display: flex;
+    flex-flow: column nowrap;
+    position: relative;
+    padding: 3rem;
+}
+.Proj figcaption{
+    width: max-content;
+}

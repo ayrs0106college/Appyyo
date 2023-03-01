@@ -1,0 +1,35 @@
+.main{
+    width: 100%;
+    height: max-content;
+    margin: auto auto 2rem auto;
+    text-align: center;
+    background-color: rgb(var(--basecolor));
+}
+.ServicesButton{
+    align-self: center;
+    border: 1px solid rgb(var(--basecolor));
+    color: rgb(var(--basecolor));
+    background-color: rgb(var(--fontcolor));
+    padding: 7px;
+    margin: 7px;
+    border-radius: 35px;
+    font-weight: 700;
+    transition: var(--fastrans);
+}
+.ServicesText{
+    width: 35%;
+    margin: auto;
+    text-align: center;
+}
+.Image {
+    position: relative;
+    display: block;
+    width: 30%;
+    height: 50vh;
+    margin: 1rem auto;
+    text-align: center;
+}
+.Img{
+	filter: drop-shadow(1px 1px 3px gray);
+	border-radius: 25px;
+}
