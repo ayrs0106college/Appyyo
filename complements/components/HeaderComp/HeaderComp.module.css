@@ -63,3 +63,13 @@
     font-weight: 700;
     transition: var(--fastrans);
 }
+.SignInButton:hover{
+    border: 1px solid rgb(var(--fontcolor));
+    color: rgb(var(--fontcolor));
+    background-color: rgb(var(--basecolor));
+}
+.SignInButton:active{
+    border: 1px solid rgb(var(--basecolor));
+    color: rgb(var(--basecolor));
+    background-color: rgb(var(--fontcolor));
+}

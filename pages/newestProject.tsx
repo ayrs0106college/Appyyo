@@ -25,6 +25,9 @@ export default function newestProject(){
     push('/', undefined, {locale:lng}),
     setLocale(lng)
   }
+  function HandleSignIn(e:any){
+    console.log(e)
+  }
 
     return (
         <>
@@ -60,20 +63,24 @@ export default function newestProject(){
                     menu: trHeader('menu6'),
                     link: '/digitalTransformation'
                     },
+                    {
+                    menu: trHeader('menu7'),
+                    link: '/getInTouch'
+                    },
                 ]}
-                // LangsFlags={[
-                //     {
-                //     Lng: 'en',
-                //     Icon: '/Icons/LangFlags/ENlng.png'
-                //     },
-                //     {
-                //     Lng: 'fr',
-                //     Icon: '/Icons/LangFlags/FRlng.png'
-                //     },
-                // ]}
+                LangsFlags={[
+                    {
+                    Lng: 'en',
+                    Icon: '/Icons/LangFlags/ENlng.png'
+                    },
+                    {
+                    Lng: 'fr',
+                    Icon: '/Icons/LangFlags/FRlng.png'
+                    },
+                ]}
                 signin={trHeader('signin')}
+                onClick={(e:any)=>HandleSignIn(e)}
             />
-
 
             <main>
                     <h1 className={styles.NewProj}>Newest Projects</h1>

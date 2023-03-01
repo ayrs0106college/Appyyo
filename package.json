@@ -10,6 +10,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
+    "watch": "npm install & next lint & next build & next dev",
     "all": "npm install & next lint & next build & next start"
   },
   "dependencies": {

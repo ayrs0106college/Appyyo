@@ -21,12 +21,19 @@ interface IHeadersMenu{
     menus?: IMenus[],
     LangsFlags?: IFlagLang[],
     signin?: string,
-}  
+    onClick: any,
+}
+
+function HandleLogin(elem:any){
+    console.log(elem)
+    //AQUIVA Function de arranque de autenticación
+}
 
 export default function HeaderComp(props:IHeadersMenu){
     const { Environment,UsrCookie,setUsrCookie,Locale,setLocale,Language,setLanguage,}: any = useContext(GlobalContext)
     const trHead = useTranslations('Header')
     const { locale, locales, push } = useRouter()
+    console.log(props)
 
     function ReturnLang(Language:string){
         push('/', undefined, {locale:Language}),
@@ -63,7 +70,7 @@ export default function HeaderComp(props:IHeadersMenu){
                     </div>
                 }
                 {props.signin && 
-                    <button className={styles.SignInButton}>{props.signin}</button>
+                    <button className={styles.SignInButton} onClick={props.onClick}>{props.signin}</button>
                 }
             </div>
         </>

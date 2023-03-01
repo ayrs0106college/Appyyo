@@ -27,6 +27,9 @@ export default function Home() {
     push('/', undefined, {locale:lng}),
     setLocale(lng)
   }
+  function HandleSignIn(e:any){
+    console.log(e)
+  }
 
   return (
     <>
@@ -47,39 +50,18 @@ export default function Home() {
       <main className={styles.main}>
         <HeaderComp 
           logo={'/Icons/manifest_icons/MaskableIcon.png'}
-          // menus={[
-          //   {
-          //     menu: trHeader('menu1'),
-          //     link: '/'
-          //   },
-          //   {
-          //     menu: trHeader('menu2'),
-          //     link: '/aboutUs'
-          //   },
-          //   {
-          //     menu: trHeader('menu3'),
-          //     link: '/innovationLab'
-          //   },
-          //   {
-          //     menu: trHeader('menu4'),
-          //     link: '/newestProject'
-          //   },
-          //   {
-          //     menu: trHeader('menu5'),
-          //     link: '/professionalServices'
-          //   },
-          // ]}
-          // LangsFlags={[
-          //   {
-          //     Lng: 'en',
-          //     Icon: '/Icons/LangFlags/ENlng.png'
-          //   },
-          //   {
-          //     Lng: 'fr',
-          //     Icon: '/Icons/LangFlags/FRlng.png'
-          //   },
-          // ]}
+          LangsFlags={[
+            {
+              Lng: 'en',
+              Icon: '/Icons/LangFlags/ENlng.png'
+            },
+            {
+              Lng: 'fr',
+              Icon: '/Icons/LangFlags/FRlng.png'
+            },
+          ]}
           signin={trHeader('signin')}
+          onClick={(e:any)=>HandleSignIn(e)}
         />
         <div id={styles.MainLinksMenu}>
           <Link id={styles.NewestProject} className={styles.MainLink} href="/newestProject"><span>Newest Project</span></Link>
