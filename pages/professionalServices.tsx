@@ -63,10 +63,10 @@ export default function professionalServices(){
                     menu: trHeader('menu4'),
                     link: '/newestProject'
                     },
-                    // {
-                    // menu: trHeader('menu5'),
-                    // link: '/professionalServices'
-                    // },
+                    {
+                    menu: trHeader('menu5'),
+                    link: '/professionalServices'
+                    },
                     {
                     menu: trHeader('menu6'),
                     link: '/digitalTransformation'
@@ -76,16 +76,16 @@ export default function professionalServices(){
                     link: '/getInTouch'
                     },
                 ]}
-                LangsFlags={[
-                    {
-                    Lng: 'en',
-                    Icon: '/Icons/LangFlags/ENlng.png'
-                    },
-                    {
-                    Lng: 'fr',
-                    Icon: '/Icons/LangFlags/FRlng.png'
-                    },
-                ]}
+                // LangsFlags={[
+                //     {
+                //     Lng: 'en',
+                //     Icon: '/Icons/LangFlags/ENlng.png'
+                //     },
+                //     {
+                //     Lng: 'fr',
+                //     Icon: '/Icons/LangFlags/FRlng.png'
+                //     },
+                // ]}
                 signin={trHeader('signin')}
                 onClick={(e:any)=>HandleSignIn(e)}      
             />

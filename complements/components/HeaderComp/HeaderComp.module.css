@@ -5,13 +5,14 @@
         'Logo Menus Langs SignIn'
     ;
     width: 100%;
+    gap: 2rem;
     position: relative;
     top: 0px;
     background-color: rgb(var(--basecolor));
 }
 .HeaderLogo{
-    width: 70px;
-    height: 70px;
+    width: 140px;
+    height: 140px;
     border-radius: 14px;
     margin: 2px;
     overflow: hidden;

@@ -15,31 +15,34 @@
     grid-template-columns: max-content auto max-content;
     grid-template-rows: minmax(6rem, 8rem) minmax(6rem, 8rem) minmax(6rem, 14rem);
     grid-template-areas: 
-        'ProfServ ProfServ  ProfServ'
-        'InnovLab Logo      AboutUs'
-        'NewProj  Logo      DigTrans'
+        'InnovLab InnovLab InnovLab'
+        'NewProj  Logo      ProfServ'
+        'AboutUs  Logo      DigTrans'
     ;
 }
 #NewestProject{
     grid-area: NewProj;
+    text-align: right;
     align-self: baseline;
 }
 #InnovationLab{
     grid-area: InnovLab;
-    text-align: right;
+    text-align: center;
     align-self: baseline;
 }
 #ProfessionalServices{
     grid-area: ProfServ;
+    text-align: left;
     align-self: baseline;
 }
 #AboutUs{
     grid-area: AboutUs;
-    text-align: left;
+    text-align: right;
     align-self: baseline;
 }
 #DigitalTransformation{
     grid-area: DigTrans;
+    text-align: left;
     align-self: baseline;
 }
 .MainLink{
@@ -56,6 +59,5 @@
     padding: 7px;
 }
 .MainLink > span:hover{
-    text-shadow: 0px 2px 2px gray;
-    background-color: rgba(10,10,10,0.3);
+    text-shadow: 0px 0px 14px whitesmoke;
 }

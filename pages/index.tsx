@@ -3,13 +3,13 @@ import { useRouter } from 'next/router'
 import Link from 'next/link';
 import Image from 'next/image';
 import React, { lazy, useState, useEffect, useContext, useRef } from 'react';
-import { Inter } from 'next/font/google'
 import styles from '@/styles/Home.module.css'
 import { useTranslations } from 'use-intl'
 import PagesHeadComp from '@/complements/components/PagesHeadComp/PagesHeadComp'
 import GlobalContext from '@/complements/components/GlobalContextComp/GlobalContextComp'
 import HeaderComp from '@/complements/components/HeaderComp/HeaderComp'
 import FooterComp from '@/complements/components/FooterComp/FooterComp'
+import { Inter } from 'next/font/google'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -50,16 +50,16 @@ export default function Home() {
       <main className={styles.main}>
         <HeaderComp 
           logo={'/Icons/manifest_icons/MaskableIcon.png'}
-          LangsFlags={[
-            {
-              Lng: 'en',
-              Icon: '/Icons/LangFlags/ENlng.png'
-            },
-            {
-              Lng: 'fr',
-              Icon: '/Icons/LangFlags/FRlng.png'
-            },
-          ]}
+          // LangsFlags={[
+          //   {
+          //     Lng: 'en',
+          //     Icon: '/Icons/LangFlags/ENlng.png'
+          //   },
+          //   {
+          //     Lng: 'fr',
+          //     Icon: '/Icons/LangFlags/FRlng.png'
+          //   },
+          // ]}
           signin={trHeader('signin')}
           onClick={(e:any)=>HandleSignIn(e)}
         />

@@ -46,7 +46,7 @@ export default function HeaderComp(props:IHeadersMenu){
                 {props.logo && 
                         <Link href="/">
                             <div className={styles.HeaderLogo}>
-                                <Image src={props.logo} width={70} height={70} alt="appy.yo logo"/>
+                                <Image src={props.logo} width={140} height={140} alt="appy.yo logo"/>
                             </div>
                         </Link>
                 }
@@ -73,6 +73,7 @@ export default function HeaderComp(props:IHeadersMenu){
                     <button className={styles.SignInButton} onClick={props.onClick}>{props.signin}</button>
                 }
             </div>
+            <hr/>
         </>
     )
 }

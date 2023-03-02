@@ -68,16 +68,16 @@ export default function newestProject(){
                     link: '/getInTouch'
                     },
                 ]}
-                LangsFlags={[
-                    {
-                    Lng: 'en',
-                    Icon: '/Icons/LangFlags/ENlng.png'
-                    },
-                    {
-                    Lng: 'fr',
-                    Icon: '/Icons/LangFlags/FRlng.png'
-                    },
-                ]}
+                // LangsFlags={[
+                //     {
+                //     Lng: 'en',
+                //     Icon: '/Icons/LangFlags/ENlng.png'
+                //     },
+                //     {
+                //     Lng: 'fr',
+                //     Icon: '/Icons/LangFlags/FRlng.png'
+                //     },
+                // ]}
                 signin={trHeader('signin')}
                 onClick={(e:any)=>HandleSignIn(e)}     
             />
